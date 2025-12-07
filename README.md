@@ -33,8 +33,7 @@ git lfs pull
 ### بديل بدون Git LFS:
 
 لو مش عايز تستخدم Git LFS، تقدر تحمل الموديلات من الرابط المباشر:
-[https://drive.google.com/file/d/1ZqBTQ8rf7XVnrban5kgZFRLdkbVNBwXd/view?usp=drive_link]  ← هنا ممكن تضيف رابط Google Drive أو OneDrive
-
+[https://drive.google.com/file/d/1ZqBTQ8rf7XVnrban5kgZFRLdkbVNBwXd/view?usp=drive_link] 
 ---
 
-بهذه الطريقة، أي شخص يفتح الريبو هيعرف ازاي ينزل الموديل ويشتغل عليه بدون مشاكل.
+
