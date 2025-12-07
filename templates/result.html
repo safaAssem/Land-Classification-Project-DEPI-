@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Classification Result</h1>
+
+    <!-- MAIN INFO -->
+    <p><strong>Predicted Class:</strong> {{ label }}</p>
+    <p><strong>Confidence:</strong> {{ '%.2f'|format(confidence) }}%</p>
+
+    <!-- IMAGE -->
+    <img class="result-img" src="{{ output_image }}" alt="result">
+
+    <!-- LAND INFO CARD -->
+    <div class="info-card">
+        <h2>About This Land Type</h2>
+
+        <p><strong>Description:</strong>  
+            <span>{{ info.description }}</span>
+        </p>
+
+        <p><strong>Recommended Uses:</strong></p>
+        <ul>
+            {% for use in info.recommended_uses %}
+            <li>{{ use }}</li>
+            {% endfor %}
+        </ul>
+
+        <p><strong>Warnings:</strong></p>
+        <ul>
+            {% for w in info.warnings %}
+            <li>{{ w }}</li>
+            {% endfor %}
+        </ul>
+
+        <p><strong>Suggestions:</strong></p>
+        <ul>
+            {% for s in info.suggestions %}
+            <li>{{ s }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- TOP 3 -->
+    <div class="info-card">
+        <h2 class="top3">Top 3 Predictions</h2>
+        <ul>
+            {% for item in top3 %}
+            <li>{{ item.class }} — {{ '%.2f'|format(item.conf * 100) }}%</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- BACK BUTTON -->
+    <div style="margin-top:20px;">
+        <a href="/">⟵ Classify another image</a>
+    </div>
+
+</div>
+</body>
+</html>

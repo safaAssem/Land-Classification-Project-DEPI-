@@ -1,0 +1,11 @@
+flask
+tensorflow>=2.12
+numpy
+pillow
+matplotlib
+plotly
+folium
+geopandas
+rasterio
+scikit-learn
+gunicorn
