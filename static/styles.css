@@ -1,0 +1,129 @@
+/* --- خلفية فاتحة وهادية --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #e6f4ea url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    background-size: contain;
+    color: #1f2937;   /* نص داكن لكن مش أسود */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+/* --- البوكس الرئيسي: فاتح ونظيف --- */
+.container {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 16px;
+    width: 520px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+/* العنوان */
+h1 {
+    font-size: 30px;
+    color: #047857;  /* أخضر جذاب */
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+p {
+    font-size: 15px;
+    color: #374151;
+}
+
+/* الأزرار */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #047857;  /* أخضر */
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #065f46;
+}
+
+input[type="file"] {
+    margin: 18px 0;
+    padding: 12px;
+    background: #f1f5f9;
+    border: 2px dashed #94a3b8;
+    border-radius: 10px;
+    color: #1f2937;
+}
+
+/* الصورة */
+.result-img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* لينكات */
+a {
+    color: #047857;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #065f46;
+}
+
+/* --- Info Card: فاتحة وألوان متناسقة --- */
+.info-card {
+    margin-top: 25px;
+    padding: 25px;
+    background: #d0e9dc;   /* أخضر فاتح */
+    color: #065f46;         /* أخضر داكن للنص */
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.info-card h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #047857;
+}
+
+.top3 {
+    color: #065f46;
+
+}
+
+.info-card p,
+.info-card li {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.info-card li {
+    color: #065f46;
+
+}
+
+.info-card ul {
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+.info-card li::marker {
+    color: #10b981;  /* أخضر مميز للنقاط */
+    font-size: 18px;
+}
+

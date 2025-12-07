@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Land Type Classifier</title>
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Land Type Classifier</h1>
+    <p>Upload a satellite image patch to classify land type.</p>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Upload & Classify</button>
+    </form>
+</div>
+
+</body>
+</html>
